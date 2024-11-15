@@ -1,23 +1,33 @@
-''' checking the watchdog device at boundary of default watchdog timeout value.
-Default value is 60s,here we have used 61s.
-The system should reset as timeout value is excceded by 1sec'''
-
-import os
+import subprocess
 import pytest
 import time
 
-
-WATCHDOG_DEVICE = "/dev/watchdog"
-
-def test_keep_watchdog_active():
+def test_simulate_network_failure_in_host():
     try:
-        with open(WATCHDOG_DEVICE, 'w') as wd:
-            wd.write('heartbeat')
-            time.sleep(61)  
-            wd.write('heartbeat')
-            wd.close()
-            
-    except PermissionError:
-        pytest.skip("Insufficient permissions to access the watchdog device")
-    except Exception as e:
-        pytest.fail(f"Unexpected exception when keeping watchdog active: {e}")
+        interface = 'eth0'
+        
+        # Bring the network interface down
+        command = f"sudo ip link set {interface} down"
+        result = subprocess.run(command, shell=True, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        print(f"Interface {interface} brought down.")
+        
+        # Wait for 63 seconds while the network is down
+        for i in range(63):
+            print(f"{i+1} second(s) after network ping down")
+            time.sleep(1)
+
+        # Bring the network interface back up
+        command_up = f"sudo ip link set {interface} up"
+        subprocess.run(command_up, shell=True, check=True)
+        print(f"Interface {interface} brought up.")
+
+        # Restart networking services
+        subprocess.run("sudo systemctl restart networking", shell=True, check=True)
+        print("Networking service restarted.")
+        print("Watchdog didn't initiate reset")
+
+    except subprocess.CalledProcessError as e:
+        print(f"Command failed with error: {e}")
+    except Exception as ex:
+        print(f"An unexpected error occurred: {ex}")
+

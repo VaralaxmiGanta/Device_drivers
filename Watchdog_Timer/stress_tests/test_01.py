@@ -1,23 +1,36 @@
-
-import time
+"""
+    Stress test for writing a heartbeat to the watchdog continuously without pause.
+    This should push the system to handle rapid, continuous writes.
+"""    
 import pytest
-import subprocess
+import os
+import time
 
-@pytest.mark.parametrize('watchdog_device', ['/dev/watchdog'])
-def test_continuous_watchdog_reset(watchdog_device):
-    """Stress test to continuously reset the watchdog timer."""
-    
+WATCHDOG_DEVICE_PATH = "/dev/watchdog"
+
+@pytest.fixture
+def setup_watchdog():
+    if not os.path.exists(WATCHDOG_DEVICE_PATH):
+        pytest.skip("Watchdog device not available")
+    yield
+
+
+def test_continuous_heartbeat_write(setup_watchdog):
     try:
-        # Open the watchdog device for writing
-        with open(watchdog_device, 'w') as f:
+        with open(WATCHDOG_DEVICE_PATH, 'w') as wd:
             start_time = time.time()
-            # Write to the watchdog every 0.5 seconds for 1 minute
-            for _ in range(120):
-                f.write('1')  # Reset the watchdog timer
-                f.flush()     # Make sure data is written immediately
-                time.sleep(0.5)
+
+            for _ in range(100000): 
+                try:
+                    wd.write("heartbeat")
+                except IOError as e:
+                    pytest.fail(f"Failed to write to watchdog device: {e}")
+                    return             
             elapsed_time = time.time() - start_time
-            assert elapsed_time < 70, "Watchdog timer failed to reset continuously within time."
-            print("Continuous watchdog reset stress test passed.")
+            print(f"Continuous write stress test took {elapsed_time:.2f} seconds")
+            
+            assert elapsed_time < 210, f"Test took too long: {elapsed_time:.2f} seconds"
+    
     except Exception as e:
-        pytest.fail(f"Failed during continuous watchdog reset: {e}")
+        pytest.fail(f"An unexpected error occurred during the test: {e}")
+

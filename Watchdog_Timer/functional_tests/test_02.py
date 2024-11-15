@@ -8,15 +8,17 @@ ping-count		= 3
 interface		= eth0'''
 
 
-  
 import subprocess
+import time
 
 def test_simulate_network_failure_in_host():
     try:
         interface = 'eth0'
         command = f"sudo ip link set {interface} down"
         result = subprocess.run(command, shell=True, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        
+        for i in range(60):
+            print(i+1,"second after network ping down")	
+            time.sleep(1)
         if result.returncode == 0:
             print(f"Network interface {interface} is down.")
         else:

@@ -1,5 +1,5 @@
 
-''' write "heartbeat" to the watchdog device and don't close the file which results in resetting the system after the default timeout expired'''
+''' write "heartbeat" to the watchdog device which results in resetting the system after the default timeout expired'''
 import os
 import pytest
 import time
