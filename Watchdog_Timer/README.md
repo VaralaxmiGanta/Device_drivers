@@ -6,7 +6,11 @@ sudo apt install watchdog
 
 
 *****************************************************************
+<<<<<<< HEAD
 			Softdog:
+=======
+			Softdog
+>>>>>>> c9940cab1394bded47df4be465985b3664adbdbb
 ***************************************************************** 
 1. The softdog module is a software-based watchdog timer available on Linux.
 
@@ -19,7 +23,11 @@ ls -l /dev/watchdog
 4. Since access to /dev/watchdog requires elevated permissions,make sure to execute the code with sudo permissions.
 
 *****************************************************************
+<<<<<<< HEAD
 			configuration file:
+=======
+			configuration file
+>>>>>>> c9940cab1394bded47df4be465985b3664adbdbb
 ****************************************************************
 
 To get the config file open /etc/watchdog.conf
