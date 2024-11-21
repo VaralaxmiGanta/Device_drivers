@@ -11,6 +11,7 @@ def test_keep_watchdog_active():
     try:
         with open(WATCHDOG_DEVICE, 'w') as wd:
             wd.write('heartbeat')
+        print("now watchdog will reboot the system in 60 seconds")
     except PermissionError:
         pytest.skip("Insufficient permissions to access the watchdog device")
     except Exception as e:

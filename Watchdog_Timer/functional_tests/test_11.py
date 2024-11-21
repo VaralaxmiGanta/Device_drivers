@@ -2,15 +2,13 @@
 '''Check for the reboot triggering when test-binary returns exit code other than 0. This test-binary will execute automatically when watchdog service starts. In this test the test-binary returns exit code 1,so watchdog will trigger reboot'''
 
 
+from conftest import start_watchdog_service
 import subprocess
 import fileinput
 import sys
 
 config_file_path="/etc/watchdog.conf"
 file1="etc/watchdog.d/file1.py"
-
-
-
 
 def modify_watchdog_config():
     try:
@@ -28,18 +26,8 @@ def modify_watchdog_config():
     except Exception as e:
         print(f"Failed to modify the configuration file: {e}")
 
-def restart_watchdog_service():
-    try:
-        subprocess.run(["sudo", "systemctl", "stop", "watchdog"], check=True)      
-        subprocess.run(["sudo", "systemctl", "start", "watchdog"], check=True)
-        print("Watchdog service restarted successfully.")
-
-    except subprocess.CalledProcessError as e:
-        print(f"Failed to restart the watchdog service: {e}")
-
-
 def test_testbinary():
     modify_watchdog_config()
-    restart_watchdog_service()
+    start_watchdog_service()
     print("Now watchdog will initiate reboot in 60sec")    
 

@@ -2,6 +2,7 @@
 To know the minimal timeout value, run /sys/class/watchdog/watchdog0/min_timeout '''
 
 
+from conftest import start_watchdog_service
 import subprocess
 import fileinput
 import sys
@@ -20,21 +21,9 @@ def modify_watchdog_timeout(config_file_path="/etc/watchdog.conf", timeout=1):
     except Exception as e:
         print(f"Failed to modify the configuration file: {e}")
 
-def restart_watchdog_service():
-    try:
-        subprocess.run(["sudo", "systemctl", "stop", "watchdog"], check=True)        
-        subprocess.run(["sudo", "systemctl", "start", "watchdog"], check=True)
-        print("Watchdog service restarted successfully.")
-    
-    except subprocess.CalledProcessError as e:
-        print(f"Failed to restart the watchdog service: {e}")
         
 def test_automate_watchdog_timeout_change(timeout=1):
     config_file_path = "/etc/watchdog.conf"
-    
-    # Step 1: Modify the watchdog timeout in the config file
     modify_watchdog_timeout(config_file_path=config_file_path, timeout=timeout)
-    
-    # Step 2: Restart the watchdog service to apply the changes
-    restart_watchdog_service()
+    start_watchdog_service()
 

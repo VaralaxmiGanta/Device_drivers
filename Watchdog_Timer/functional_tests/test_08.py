@@ -1,10 +1,11 @@
 '''Check for a running process/daemon by its PID file,if it doesn't exists watchdog will trigger system reboot'''
 
 
-
+from conftest import start_watchdog_service
 import subprocess
 import fileinput
 import sys
+import os
 
 config_file_path="/etc/watchdog.conf"
 pid_file="/var/run/sshd.pid"
@@ -12,8 +13,8 @@ pid_file="/var/run/sshd.pid"
 
 def remove_pidfile():
     try:
-        if not (subprocess.run(["file",pid_file],check=True)):
-            subprocess.run(["rm",pid_file],check=True)
+        if os.path.exists(pid_file):
+            subprocess.run(["sudo","rm",pid_file],check=True)
             print("sshd pid  file is removed")
     except Exception:
         print("file not exists to remove")
@@ -31,22 +32,11 @@ def modify_watchdog_config():
     
     except Exception as e:
         print(f"Failed to modify the configuration file: {e}")
-
-def restart_watchdog_service():
-    try:
-        subprocess.run(["sudo", "systemctl", "stop", "watchdog"], check=True)        
-        subprocess.run(["sudo", "systemctl", "start", "watchdog"], check=True)
-        print("Watchdog service restarted successfully.")
-    
-    except subprocess.CalledProcessError as e:
-        print(f"Failed to restart the watchdog service: {e}")
-
         
 def test_pidfile():
-    config_file_path = "/etc/watchdog.conf"
+    remove_pidfile()    
     modify_watchdog_config()
-    restart_watchdog_service()
-    remove_pidfile()
+    start_watchdog_service()
     print("Now watchdog will initiate reboot in 60sec")
     
 

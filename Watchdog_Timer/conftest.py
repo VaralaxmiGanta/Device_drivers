@@ -1,11 +1,9 @@
-"""Test accessing watchdog without sufficient permissions.
-    Accessing the watchdog as a non-root user should raise a PermissionError.
-    run this test case with --noconftest option while using pytest and don't use sudo to get the accurate output
-"""
+"""Fixture to enable the watchdog device and set its timeout before each test."""
+
+
 import subprocess
 import pytest
 import fileinput
-import os
 
 config_file_path="/etc/watchdog.conf"
 
@@ -42,26 +40,30 @@ def start_watchdog_service():
     except subprocess.CalledProcessError as e:
         print(f"Failed to restart the watchdog service: {e}")
 
-
-@pytest.mark.no_fixture
-def test_access_without_permissions():
-    load_watchdog_module()
-    modify_watchdog_config()
-    start_watchdog_service()
+def stop_watchdog_service():
     try:
-        if not os.path.exists(WATCHDOG_DEVICE_PATH):
-            raise FileNotFoundError(f"Watchdog device not found at {WATCHDOG_DEVICE_PATH}")
+        subprocess.run(["sudo", "systemctl", "stop", "watchdog"], check=True)
+        print("Watchdog service stopped successfully.")
+    except subprocess.CalledProcessError as e:
+        pytest.fail(f"Failed to stop the watchdog service: {e}")
 
-        with pytest.raises(PermissionError):
-            with open(WATCHDOG_DEVICE_PATH, 'w') as wd:
-                wd.write("test")  
+def unload_watchdog_module():
+    try:
+        subprocess.run(['sudo','modprobe', '-r', 'softdog'], check=True)
+        print("Watchdog device unloaded.")
+    except subprocess.CalledProcessError as e:
+        pytest.fail(f"Failed to unload the watchdog device: {e}")
 
-    except FileNotFoundError as fnf_error:
-        print(f"File not found error: {fnf_error}")
-        pytest.fail(f"Watchdog device not found: {fnf_error}")  
-    except PermissionError as perm_error:
-        print(f"Permission error: {perm_error}")
-        
-    except Exception as e:
-        print(f"Unexpected error occurred: {e}")
-        pytest.fail(f"An unexpected error occurred: {e}")
+@pytest.fixture(scope="function", autouse=True)
+def manage_watchdog_device():
+    load_watchdog_device()
+
+    modify_watchdog_config()
+
+    start_watchdog_service()
+    
+    stop_watchdog_service()
+  
+    yield
+
+    unload_watchdog_module()

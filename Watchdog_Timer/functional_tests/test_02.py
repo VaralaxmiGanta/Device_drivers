@@ -1,31 +1,35 @@
-'''Edit the config file(/etc/watchdog.conf).
-watchdog-device		= /dev/watchdog
-watchdog-timeout	= 60
-realtime		= yes
-priority		= 1
-ping			= 8.8.8.8
-ping-count		= 3
-interface		= eth0'''
+'''check whether the watchdog initiates reboot when there is no network activity done while the interface is enabled.'''
 
-
+from confest import restart_watchdog_service
 import subprocess
 import time
+import re
+import fileinput
+
+
+config_file_path="/etc/watchdog.conf"
+
+def modify_watchdog_config():
+    try:
+        with fileinput.FileInput(config_file_path, inplace=True, backup='.bak') as file:
+            for line in file:
+                if line.strip().startswith("#interface") or line.strip().startswith("# interface"):
+                    print(f"interface = eth0")
+                else:
+                    print(line, end='')
+
+        print(f"Changes are updated in {config_file_path}")
+
+    except Exception as e:
+        print(f"Failed to modify the configuration file: {e}")
+
+
 
 def test_simulate_network_failure_in_host():
-    try:
-        interface = 'eth0'
-        command = f"sudo ip link set {interface} down"
-        result = subprocess.run(command, shell=True, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        for i in range(60):
-            print(i+1,"second after network ping down")	
-            time.sleep(1)
-        if result.returncode == 0:
-            print(f"Network interface {interface} is down.")
-        else:
-            print(f"Failed to bring {interface} down. Exit code: {result.returncode}")
+    modify_watchdog_config()
+    start_watchdog_service()
+    print("watchdog will initiate reboot in 60 sec as there is no continuous network activity is occuring") 
     
-    except subprocess.CalledProcessError as e:
-        print(f"Command failed with error: {e}")
-    except Exception as ex:
-        print(f"An unexpected error occurred: {ex}")
+    
+
 

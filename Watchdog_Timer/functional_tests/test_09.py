@@ -2,9 +2,11 @@
 To monitors the temperature and triggers the watchdog timer if the temperature exceeds the defined threshold
 """
 
+from conftest import start_watchdog_service
 import time
 import subprocess
 import os
+import fileinput
 
 config_file_path = "/etc/watchdog.conf"
 TEMP_SENSOR_PATH = "/sys/class/thermal/thermal_zone0/temp"
@@ -27,18 +29,10 @@ def modify_watchdog_config():
     except Exception as e:
         print(f"Failed to modify the configuration file: {e}")
 
-def restart_watchdog_service():
-    try:
-        subprocess.run(["sudo", "systemctl", "stop", "watchdog"], check=True)        
-        subprocess.run(["sudo", "systemctl", "start", "watchdog"], check=True)
-        print("Watchdog service restarted successfully.")
-    
-    except subprocess.CalledProcessError as e:
-        print(f"Failed to restart the watchdog service: {e}")
 
 
 def test_temperature_sensor():
     modify_watchdog_config()
-    restart_watchdog_service()
+    start_watchdog_service()
     print("Watchdog will initiate reboot when the temperature exceeds the threshold temperature")
 

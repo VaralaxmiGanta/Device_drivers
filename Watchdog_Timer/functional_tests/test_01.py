@@ -5,10 +5,11 @@ import subprocess
 import pytest
 
 
+
 def test_watchdog_kernel_module():
     try:
         result = subprocess.run(
-            ['lsmod', '|', 'grep', 'watchdog'],
+            ['lsmod'],
             check=True,
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE
