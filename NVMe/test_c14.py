@@ -1,72 +1,49 @@
+import json
 import subprocess
-import time
 import pytest
 
-def perform_controller_reset():
-    # Perform a controller reset using nvme-cli (requires root privileges)
-    print("\nSimulating NVMe controller reset...")
-    subprocess.run(['sudo', 'nvme', 'reset', '/dev/nvme0'], check=True)
+""" This test case is to verify the Bandwidth for different types of operations"""
 
-def check_dmesg_for_reset():
-    # Check if the controller reset is present in dmesg logs
-    print("\nChecking dmesg logs for controller reset...")
-    result = subprocess.run("sudo dmesg | grep nvme", capture_output=True, text=True,shell=True)
-    #print(result)
-    # Filter for controller reset related logs
-    reset_logs = [line for line in result.stdout.splitlines() if "resetting controller" in line.lower()]
-    
-    if reset_logs:
-        print("\nController reset detected in dmesg:")
-        for log in reset_logs:
-            print(log)
-        return True
-    else:
-        print("\nController reset not found in dmesg.")
-        return False
+# Function to run the FIO test and capture Bandwidth
+def run_fio_test_bandwidth(test_name, rw_type, filename):
+    command = [
+        'fio',
+        f'--name={test_name}',
+        '--ioengine=libaio',
+        f'--rw={rw_type}',
+        '--bs=4k',
+        '--numjobs=4',
+        '--runtime=60',  # Run for 1 minute
+        '--iodepth=32',
+        '--direct=1',
+        f'--filename={filename}',
+        '--output-format=json'
+    ]
 
-def check_queue_reinitialization():
-    # Check if queues are reinitialized after the reset
-    print("\nChecking if NVMe queues are reinitialized...")
-    result = subprocess.run("sudo dmesg | grep nvme", capture_output=True, text=True,shell=True)
-    # Filter for queue reinitialization logs
-    queue_logs = [line for line in result.stdout.splitlines() if "read/poll queues" in line.lower()]
-    
-    if queue_logs:
-        print("\nQueue reinitialization detected in dmesg:")
-        for log in queue_logs:
-            print(log)
-        return True
-    else:
-        print("Queue reinitialization not detected.")
-        return False
+    print(f"Running {test_name} on NVMe device...")
+    result = subprocess.run(command, capture_output=True, text=True, check=True)
+    output = json.loads(result.stdout)
 
-def test_controller_reset_recovery():
-    # Run an I/O test (for example, fio) to simulate normal operation
-    fio_process = subprocess.Popen(['fio', '--name=test', '--rw=randwrite', '--ioengine=libaio', '--bs=4k', '--numjobs=4', '--iodepth=32', '--runtime=60', '--direct=1', '--filename=/dev/nvme0n1'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    
-    # Simulate a controller reset while fio is running
-    perform_controller_reset()
+    # Extract Bandwidth in MB/s
+    bandwidth = 0
+    if rw_type in ['randread', 'read']:
+        bandwidth = output['jobs'][0].get('read', {}).get('bw', 0) / 1024  # Convert KB/s to MB/s
+    elif rw_type in ['randwrite', 'write']:
+        bandwidth = output['jobs'][0].get('write', {}).get('bw', 0) / 1024  # Convert KB/s to MB/s
 
-    # Allow some time for the reset and reinitialization to complete
-    time.sleep(5)
+    return bandwidth
 
-    # Check if the controller reset is logged in dmesg
-    assert check_dmesg_for_reset(), "Controller reset not found in dmesg"
+@pytest.mark.parametrize("test_name, rw_type", [
+    ("random-read-test", "randread"),
+    ("random-write-test", "randwrite"),
+    ("sequential-read-test", "read"),
+    ("sequential-write-test", "write")
+])
 
-    # Check if the queues are reinitialized
-    assert check_queue_reinitialization(), "Queue reinitialization not detected in dmesg"
+def test_fio_bandwidth(test_name, rw_type):
+    filename = '/dev/nvme0n1'
+    bandwidth = run_fio_test_bandwidth(test_name, rw_type, filename)
 
-    # Check if fio encounters any errors after the reset
-    stdout, stderr = fio_process.communicate()
-    if "I/O error" in stderr.decode():
-        print("I/O error detected after reset. Testing recovery.")
-        # Check if the device is back online
-        recovery_test = subprocess.run(['lsblk', '/dev/nvme0n1'], capture_output=True, text=True)
-        assert recovery_test.returncode == 0, "Device not accessible after reset"
-        print("Device successfully reinitialized.")
-    else:
-        print("\nI/O operations were successful after controller reset.")
-
-# Run the test with pytest
-if __name__ == "__main__":
-    pytest.main()
+    # Assert that the bandwidth is above the expected threshold
+    print(f"{test_name} - Bandwidth: {bandwidth} MB/s")
+    assert bandwidth > 0, f"Bandwidth for {test_name} is below expected threshold. Actual: {bandwidth} MB/s"

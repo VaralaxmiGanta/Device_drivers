@@ -2,6 +2,8 @@ import json
 import subprocess
 import pytest
 
+""" This test case is to verify the IOPS for different types of operations"""
+
 # Function to run the FIO test and capture IOPS
 def run_fio_test(test_name, rw_type, filename):
     command = [
@@ -43,9 +45,8 @@ def run_fio_test(test_name, rw_type, filename):
     ("sequential-write-test", "write")
 ])
 def test_fio_iops(test_name, rw_type):
-    filename = '/dev/nvme0n1'  # Change this to your NVMe device path
 
-    # Run the FIO test
+    filename = '/dev/nvme0n1'
     iops = run_fio_test(test_name, rw_type, filename)
 
     # Assert that the IOPS are above the expected threshold

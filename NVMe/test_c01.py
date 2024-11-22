@@ -1,6 +1,8 @@
 import subprocess
 import pytest
 
+"""This Test case is to check the dmesg output to validate initialization of nvme device and driver during booting."""
+
 
 def get_nvme_initialization_messages():
     try:
@@ -16,7 +18,6 @@ def get_nvme_initialization_messages():
         return []
 
 
-#@pytest.mark.skipif("os.geteuid() != 0", reason="Requires root privileges")
 def test_nvme_initialization():
 
     nvme_init_msgs = get_nvme_initialization_messages()

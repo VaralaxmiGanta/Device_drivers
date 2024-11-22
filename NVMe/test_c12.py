@@ -2,7 +2,8 @@ import json
 import subprocess
 import pytest
 
-# Run the FIO test and return performance metrics
+"""This Test case is to verify the performance of an nvme device under random r/w and sequential r/w operations  """
+
 def run_fio_test(ioengine, rw, bs, numjobs, iodepth, filename, size, runtime):
     command = [
         'fio',
@@ -23,7 +24,6 @@ def run_fio_test(ioengine, rw, bs, numjobs, iodepth, filename, size, runtime):
     result = subprocess.run(command, capture_output=True, text=True, check=True)
     output = json.loads(result.stdout)
     
-    # Extract relevant data from the FIO output
     job_runtime_ms = output['jobs'][0]['job_runtime']
     job_runtime_s = job_runtime_ms / 1000  # Convert to seconds
     
