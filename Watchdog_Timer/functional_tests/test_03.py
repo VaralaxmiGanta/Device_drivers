@@ -4,7 +4,7 @@ import pytest
 import time
 import subprocess
 import fileinput
-from conftest import restart_watchdog_service
+from conftest import start_watchdog_service
 
 
 config_file_path = "/etc/watchdog_config"
