@@ -28,6 +28,7 @@ def modify_watchdog_config():
 def test_simulate_network_failure_in_host():
     modify_watchdog_config()
     start_watchdog_service()
+    time.sleep(62)
     print("watchdog will initiate reboot in 60 sec as there is no continuous network activity is occuring") 
     
     
