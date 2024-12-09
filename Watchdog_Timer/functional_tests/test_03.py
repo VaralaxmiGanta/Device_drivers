@@ -7,7 +7,7 @@ import fileinput
 from conftest import start_watchdog_service
 
 
-config_file_path = "/etc/watchdog_config"
+config_file_path = "/etc/watchdog.conf"
 
 def modify_watchdog_config():
     try:
