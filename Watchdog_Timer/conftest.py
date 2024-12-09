@@ -56,7 +56,7 @@ def unload_watchdog_module():
 
 @pytest.fixture(scope="function", autouse=True)
 def manage_watchdog_device():
-    load_watchdog_device()
+    load_watchdog_module()
 
     modify_watchdog_config()
 
