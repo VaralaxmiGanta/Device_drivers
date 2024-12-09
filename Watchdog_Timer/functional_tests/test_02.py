@@ -1,6 +1,6 @@
 '''check whether the watchdog initiates reboot when there is no network activity done while the interface is enabled.'''
 
-from confest import restart_watchdog_service
+from confest import start_watchdog_service
 import subprocess
 import time
 import re
