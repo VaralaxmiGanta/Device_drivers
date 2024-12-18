@@ -1,0 +1,199 @@
+2024-12-18 11:16:48 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.address`.
+2024-12-18 11:16:48 - faker.factory - DEBUG - Provider `faker.providers.address` has been localized to `en_US`.
+2024-12-18 11:16:48 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.automotive`.
+2024-12-18 11:16:48 - faker.factory - DEBUG - Provider `faker.providers.automotive` has been localized to `en_US`.
+2024-12-18 11:16:48 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.bank`.
+2024-12-18 11:16:48 - faker.factory - DEBUG - Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+2024-12-18 11:16:48 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.barcode`.
+2024-12-18 11:16:48 - faker.factory - DEBUG - Provider `faker.providers.barcode` has been localized to `en_US`.
+2024-12-18 11:16:48 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.color`.
+2024-12-18 11:16:48 - faker.factory - DEBUG - Provider `faker.providers.color` has been localized to `en_US`.
+2024-12-18 11:16:48 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.company`.
+2024-12-18 11:16:48 - faker.factory - DEBUG - Provider `faker.providers.company` has been localized to `en_US`.
+2024-12-18 11:16:48 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.credit_card`.
+2024-12-18 11:16:48 - faker.factory - DEBUG - Provider `faker.providers.credit_card` has been localized to `en_US`.
+2024-12-18 11:16:48 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.currency`.
+2024-12-18 11:16:48 - faker.factory - DEBUG - Provider `faker.providers.currency` has been localized to `en_US`.
+2024-12-18 11:16:48 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.date_time`.
+2024-12-18 11:16:48 - faker.factory - DEBUG - Provider `faker.providers.date_time` has been localized to `en_US`.
+2024-12-18 11:16:48 - faker.factory - DEBUG - Provider `faker.providers.emoji` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-12-18 11:16:48 - faker.factory - DEBUG - Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-12-18 11:16:48 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.geo`.
+2024-12-18 11:16:48 - faker.factory - DEBUG - Provider `faker.providers.geo` has been localized to `en_US`.
+2024-12-18 11:16:48 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.internet`.
+2024-12-18 11:16:48 - faker.factory - DEBUG - Provider `faker.providers.internet` has been localized to `en_US`.
+2024-12-18 11:16:48 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.isbn`.
+2024-12-18 11:16:48 - faker.factory - DEBUG - Provider `faker.providers.isbn` has been localized to `en_US`.
+2024-12-18 11:16:48 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.job`.
+2024-12-18 11:16:48 - faker.factory - DEBUG - Provider `faker.providers.job` has been localized to `en_US`.
+2024-12-18 11:16:48 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.lorem`.
+2024-12-18 11:16:48 - faker.factory - DEBUG - Provider `faker.providers.lorem` has been localized to `en_US`.
+2024-12-18 11:16:48 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.misc`.
+2024-12-18 11:16:48 - faker.factory - DEBUG - Provider `faker.providers.misc` has been localized to `en_US`.
+2024-12-18 11:16:48 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.passport`.
+2024-12-18 11:16:48 - faker.factory - DEBUG - Provider `faker.providers.passport` has been localized to `en_US`.
+2024-12-18 11:16:48 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.person`.
+2024-12-18 11:16:48 - faker.factory - DEBUG - Provider `faker.providers.person` has been localized to `en_US`.
+2024-12-18 11:16:48 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.phone_number`.
+2024-12-18 11:16:48 - faker.factory - DEBUG - Provider `faker.providers.phone_number` has been localized to `en_US`.
+2024-12-18 11:16:48 - faker.factory - DEBUG - Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-12-18 11:16:48 - faker.factory - DEBUG - Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-12-18 11:16:48 - faker.factory - DEBUG - Provider `faker.providers.sbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-12-18 11:16:48 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.ssn`.
+2024-12-18 11:16:48 - faker.factory - DEBUG - Provider `faker.providers.ssn` has been localized to `en_US`.
+2024-12-18 11:16:48 - faker.factory - DEBUG - Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.address`.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Provider `faker.providers.address` has been localized to `en_US`.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.automotive`.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Provider `faker.providers.automotive` has been localized to `en_US`.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.bank`.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Specified locale `en_US` is not available for provider `faker.providers.bank`. Locale reset to `en_GB` for this provider.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.barcode`.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Provider `faker.providers.barcode` has been localized to `en_US`.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.color`.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Provider `faker.providers.color` has been localized to `en_US`.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.company`.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Provider `faker.providers.company` has been localized to `en_US`.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.credit_card`.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Provider `faker.providers.credit_card` has been localized to `en_US`.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.currency`.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Provider `faker.providers.currency` has been localized to `en_US`.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.date_time`.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Provider `faker.providers.date_time` has been localized to `en_US`.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Provider `faker.providers.emoji` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Provider `faker.providers.file` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.geo`.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Provider `faker.providers.geo` has been localized to `en_US`.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.internet`.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Provider `faker.providers.internet` has been localized to `en_US`.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.isbn`.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Provider `faker.providers.isbn` has been localized to `en_US`.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.job`.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Provider `faker.providers.job` has been localized to `en_US`.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.lorem`.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Provider `faker.providers.lorem` has been localized to `en_US`.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.misc`.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Provider `faker.providers.misc` has been localized to `en_US`.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.passport`.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Provider `faker.providers.passport` has been localized to `en_US`.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.person`.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Provider `faker.providers.person` has been localized to `en_US`.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.phone_number`.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Provider `faker.providers.phone_number` has been localized to `en_US`.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Provider `faker.providers.profile` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Provider `faker.providers.python` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Provider `faker.providers.sbn` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Looking for locale `en_US` in provider `faker.providers.ssn`.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Provider `faker.providers.ssn` has been localized to `en_US`.
+2024-12-18 11:19:03 - faker.factory - DEBUG - Provider `faker.providers.user_agent` does not feature localization. Specified locale `en_US` is not utilized for this provider.
+2024-12-18 11:23:03 - paramiko.transport - DEBUG - starting thread (client mode): 0x197f49b0
+2024-12-18 11:23:03 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_2.6.0
+2024-12-18 11:23:04 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_9.7p1 Debian-5
+2024-12-18 11:23:04 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.7p1)
+2024-12-18 11:23:04 - paramiko.transport - DEBUG - kex algos:['sntrup761x25519-sha512@openssh.com', 'curve25519-sha256', 'curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group16-sha512', 'diffie-hellman-group18-sha512', 'diffie-hellman-group14-sha256', 'ext-info-s', 'kex-strict-s-v00@openssh.com'] server key:['rsa-sha2-512', 'rsa-sha2-256', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['chacha20-poly1305@openssh.com', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com'] server encrypt:['chacha20-poly1305@openssh.com', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com'] client mac:['umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1'] server mac:['umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
+2024-12-18 11:23:04 - paramiko.transport - DEBUG - Kex agreed: curve25519-sha256@libssh.org
+2024-12-18 11:23:04 - paramiko.transport - DEBUG - HostKey agreed: ssh-ed25519
+2024-12-18 11:23:04 - paramiko.transport - DEBUG - Cipher agreed: aes128-ctr
+2024-12-18 11:23:04 - paramiko.transport - DEBUG - MAC agreed: hmac-sha2-256
+2024-12-18 11:23:04 - paramiko.transport - DEBUG - Compression agreed: none
+2024-12-18 11:23:04 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2024-12-18 11:23:04 - paramiko.transport - DEBUG - Switch to new keys ...
+2024-12-18 11:23:04 - paramiko.transport - DEBUG - Adding ssh-ed25519 host key for [localhost]:2222: b'440556c707c76a120614a09ee00fa49e'
+2024-12-18 11:23:04 - paramiko.transport - DEBUG - Trying SSH agent key b'10eae2712e187764395d5489e5f62d81'
+2024-12-18 11:23:04 - paramiko.transport - DEBUG - userauth is OK
+2024-12-18 11:23:04 - paramiko.transport - INFO - Authentication (publickey) failed.
+2024-12-18 11:23:04 - paramiko.transport - DEBUG - userauth is OK
+2024-12-18 11:23:06 - paramiko.transport - INFO - Authentication (password) successful!
+2024-12-18 11:23:06 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2024-12-18 11:23:06 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2024-12-18 11:23:06 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2024-12-18 11:23:06 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2024-12-18 11:23:06 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2024-12-18 11:23:06 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2024-12-18 11:23:07 - paramiko.transport - DEBUG - [chan 0] EOF received (0)
+2024-12-18 11:23:07 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2024-12-18 11:23:07 - paramiko.transport - DEBUG - EOF in transport thread
+2024-12-18 11:23:07 - TE001 - INFO - adding ip address to the eth0
+2024-12-18 11:23:07 - paramiko.transport - DEBUG - starting thread (client mode): 0x1966a090
+2024-12-18 11:23:07 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_2.6.0
+2024-12-18 11:23:07 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_9.7p1 Debian-5
+2024-12-18 11:23:07 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.7p1)
+2024-12-18 11:23:07 - paramiko.transport - DEBUG - kex algos:['sntrup761x25519-sha512@openssh.com', 'curve25519-sha256', 'curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group16-sha512', 'diffie-hellman-group18-sha512', 'diffie-hellman-group14-sha256', 'ext-info-s', 'kex-strict-s-v00@openssh.com'] server key:['rsa-sha2-512', 'rsa-sha2-256', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['chacha20-poly1305@openssh.com', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com'] server encrypt:['chacha20-poly1305@openssh.com', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com'] client mac:['umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1'] server mac:['umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
+2024-12-18 11:23:07 - paramiko.transport - DEBUG - Kex agreed: curve25519-sha256@libssh.org
+2024-12-18 11:23:07 - paramiko.transport - DEBUG - HostKey agreed: ssh-ed25519
+2024-12-18 11:23:07 - paramiko.transport - DEBUG - Cipher agreed: aes128-ctr
+2024-12-18 11:23:07 - paramiko.transport - DEBUG - MAC agreed: hmac-sha2-256
+2024-12-18 11:23:07 - paramiko.transport - DEBUG - Compression agreed: none
+2024-12-18 11:23:08 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2024-12-18 11:23:08 - paramiko.transport - DEBUG - Switch to new keys ...
+2024-12-18 11:23:08 - paramiko.transport - DEBUG - Adding ssh-ed25519 host key for [localhost]:2222: b'440556c707c76a120614a09ee00fa49e'
+2024-12-18 11:23:08 - paramiko.transport - DEBUG - Trying SSH agent key b'10eae2712e187764395d5489e5f62d81'
+2024-12-18 11:23:08 - paramiko.transport - DEBUG - userauth is OK
+2024-12-18 11:23:08 - paramiko.transport - INFO - Authentication (publickey) failed.
+2024-12-18 11:23:08 - paramiko.transport - DEBUG - userauth is OK
+2024-12-18 11:23:08 - paramiko.transport - INFO - Authentication (password) successful!
+2024-12-18 11:23:08 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2024-12-18 11:23:09 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2024-12-18 11:23:09 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2024-12-18 11:23:09 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2024-12-18 11:23:09 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2024-12-18 11:23:09 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2024-12-18 11:23:09 - paramiko.transport - DEBUG - [chan 0] EOF received (0)
+2024-12-18 11:23:09 - paramiko.transport - DEBUG - starting thread (client mode): 0x1968c800
+2024-12-18 11:23:09 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_2.6.0
+2024-12-18 11:23:09 - paramiko.transport - DEBUG - EOF in transport thread
+2024-12-18 11:23:10 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_9.7p1 Debian-5
+2024-12-18 11:23:10 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.7p1)
+2024-12-18 11:23:10 - paramiko.transport - DEBUG - kex algos:['sntrup761x25519-sha512@openssh.com', 'curve25519-sha256', 'curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group16-sha512', 'diffie-hellman-group18-sha512', 'diffie-hellman-group14-sha256', 'ext-info-s', 'kex-strict-s-v00@openssh.com'] server key:['rsa-sha2-512', 'rsa-sha2-256', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['chacha20-poly1305@openssh.com', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com'] server encrypt:['chacha20-poly1305@openssh.com', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com'] client mac:['umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1'] server mac:['umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
+2024-12-18 11:23:10 - paramiko.transport - DEBUG - Kex agreed: curve25519-sha256@libssh.org
+2024-12-18 11:23:10 - paramiko.transport - DEBUG - HostKey agreed: ssh-ed25519
+2024-12-18 11:23:10 - paramiko.transport - DEBUG - Cipher agreed: aes128-ctr
+2024-12-18 11:23:10 - paramiko.transport - DEBUG - MAC agreed: hmac-sha2-256
+2024-12-18 11:23:10 - paramiko.transport - DEBUG - Compression agreed: none
+2024-12-18 11:23:10 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2024-12-18 11:23:10 - paramiko.transport - DEBUG - Switch to new keys ...
+2024-12-18 11:23:10 - paramiko.transport - DEBUG - Adding ssh-ed25519 host key for [localhost]:2222: b'440556c707c76a120614a09ee00fa49e'
+2024-12-18 11:23:10 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2024-12-18 11:23:10 - paramiko.transport - DEBUG - Dropping user packet because connection is dead.
+2024-12-18 11:23:10 - paramiko.transport - DEBUG - Trying SSH agent key b'10eae2712e187764395d5489e5f62d81'
+2024-12-18 11:23:10 - paramiko.transport - DEBUG - userauth is OK
+2024-12-18 11:23:10 - paramiko.transport - INFO - Authentication (publickey) failed.
+2024-12-18 11:23:10 - paramiko.transport - DEBUG - userauth is OK
+2024-12-18 11:23:11 - paramiko.transport - INFO - Authentication (password) successful!
+2024-12-18 11:23:11 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2024-12-18 11:23:12 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2024-12-18 11:23:12 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2024-12-18 11:23:12 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2024-12-18 11:23:12 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2024-12-18 11:23:12 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2024-12-18 11:23:12 - paramiko.transport - DEBUG - [chan 0] EOF received (0)
+2024-12-18 11:23:12 - TE001 - INFO - verifing the connection with the added IP address using ping command
+2024-12-18 11:23:12 - paramiko.transport - DEBUG - starting thread (client mode): 0x1968da90
+2024-12-18 11:23:12 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_2.6.0
+2024-12-18 11:23:13 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_9.7p1 Debian-5
+2024-12-18 11:23:13 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.7p1)
+2024-12-18 11:23:13 - paramiko.transport - DEBUG - kex algos:['sntrup761x25519-sha512@openssh.com', 'curve25519-sha256', 'curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group16-sha512', 'diffie-hellman-group18-sha512', 'diffie-hellman-group14-sha256', 'ext-info-s', 'kex-strict-s-v00@openssh.com'] server key:['rsa-sha2-512', 'rsa-sha2-256', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['chacha20-poly1305@openssh.com', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com'] server encrypt:['chacha20-poly1305@openssh.com', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr', 'aes128-gcm@openssh.com', 'aes256-gcm@openssh.com'] client mac:['umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1'] server mac:['umac-64-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-256-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-64@openssh.com', 'umac-128@openssh.com', 'hmac-sha2-256', 'hmac-sha2-512', 'hmac-sha1'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
+2024-12-18 11:23:13 - paramiko.transport - DEBUG - Kex agreed: curve25519-sha256@libssh.org
+2024-12-18 11:23:13 - paramiko.transport - DEBUG - HostKey agreed: ssh-ed25519
+2024-12-18 11:23:13 - paramiko.transport - DEBUG - Cipher agreed: aes128-ctr
+2024-12-18 11:23:13 - paramiko.transport - DEBUG - MAC agreed: hmac-sha2-256
+2024-12-18 11:23:13 - paramiko.transport - DEBUG - Compression agreed: none
+2024-12-18 11:23:13 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2024-12-18 11:23:13 - paramiko.transport - DEBUG - Switch to new keys ...
+2024-12-18 11:23:13 - paramiko.transport - DEBUG - Adding ssh-ed25519 host key for [localhost]:2222: b'440556c707c76a120614a09ee00fa49e'
+2024-12-18 11:23:13 - paramiko.transport - DEBUG - Trying SSH agent key b'10eae2712e187764395d5489e5f62d81'
+2024-12-18 11:23:13 - paramiko.transport - DEBUG - userauth is OK
+2024-12-18 11:23:13 - paramiko.transport - INFO - Authentication (publickey) failed.
+2024-12-18 11:23:13 - paramiko.transport - DEBUG - userauth is OK
+2024-12-18 11:23:14 - paramiko.transport - INFO - Authentication (password) successful!
+2024-12-18 11:23:14 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2024-12-18 11:23:14 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2024-12-18 11:23:14 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2024-12-18 11:23:14 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2024-12-18 11:23:14 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2024-12-18 11:23:14 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2024-12-18 11:23:17 - paramiko.transport - DEBUG - [chan 0] EOF received (0)
+2024-12-18 11:23:18 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2024-12-18 11:23:18 - paramiko.transport - DEBUG - Dropping user packet because connection is dead.
+2024-12-18 11:23:18 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2024-12-18 11:23:18 - paramiko.transport - DEBUG - Dropping user packet because connection is dead.
