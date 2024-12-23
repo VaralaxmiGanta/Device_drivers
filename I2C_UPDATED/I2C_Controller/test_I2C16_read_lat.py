@@ -7,7 +7,7 @@ from Inputs.common_inputs import Inputs
 
 def get_i2c_read_latency():
     result = subprocess.run(
-        ['time', 'sudo', 'i2cget', '-y', Inputs.I2C_BUS, Inputs.DEVICE_ADDR, '0x22'],
+        ['time', 'sudo', 'i2cget', '-y', str(Inputs.I2C_BUS), str(Inputs.DEVICE_ADDR), '0x22'],
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE
     )
