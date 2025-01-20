@@ -1,0 +1,467 @@
+2025-01-19 16:55:11 - paramiko.transport - DEBUG - starting thread (client mode): 0x94e62b00
+2025-01-19 16:55:11 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.5.0
+2025-01-19 16:55:12 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_9.7p1 Debian-5
+2025-01-19 16:55:12 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.7p1)
+2025-01-19 16:55:12 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2025-01-19 16:55:12 - paramiko.transport - DEBUG - kex algos: sntrup761x25519-sha512@openssh.com, curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, ext-info-s, kex-strict-s-v00@openssh.com
+2025-01-19 16:55:12 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2025-01-19 16:55:12 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-01-19 16:55:12 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-01-19 16:55:12 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-01-19 16:55:12 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-01-19 16:55:12 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2025-01-19 16:55:12 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2025-01-19 16:55:12 - paramiko.transport - DEBUG - client lang: <none>
+2025-01-19 16:55:12 - paramiko.transport - DEBUG - server lang: <none>
+2025-01-19 16:55:12 - paramiko.transport - DEBUG - kex follows: False
+2025-01-19 16:55:12 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2025-01-19 16:55:12 - paramiko.transport - DEBUG - Strict kex mode: True
+2025-01-19 16:55:12 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2025-01-19 16:55:12 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2025-01-19 16:55:12 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2025-01-19 16:55:12 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2025-01-19 16:55:12 - paramiko.transport - DEBUG - Compression: none
+2025-01-19 16:55:12 - paramiko.transport - DEBUG - === End of kex handshake ===
+2025-01-19 16:55:12 - paramiko.transport - DEBUG - Resetting outbound seqno after NEWKEYS due to strict mode
+2025-01-19 16:55:12 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-01-19 16:55:12 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-01-19 16:55:12 - paramiko.transport - DEBUG - Resetting inbound seqno after NEWKEYS due to strict mode
+2025-01-19 16:55:12 - paramiko.transport - DEBUG - Adding ssh-ed25519 host key for [localhost]:2222: b'440556c707c76a120614a09ee00fa49e'
+2025-01-19 16:55:12 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ssh-ed25519@openssh.com,sk-ecdsa-sha2-nistp256@openssh.com,rsa-sha2-512,rsa-sha2-256', 'publickey-hostbound@openssh.com': b'0', 'ping@openssh.com': b'0'}
+2025-01-19 16:55:12 - paramiko.transport - DEBUG - Trying SSH agent key b'e9b3221716ad2d332f8244713a244261'
+2025-01-19 16:55:12 - paramiko.transport - DEBUG - userauth is OK
+2025-01-19 16:55:12 - paramiko.transport - INFO - Authentication (publickey) failed.
+2025-01-19 16:55:12 - paramiko.transport - DEBUG - Trying discovered key b'e9b3221716ad2d332f8244713a244261' in /home/vlab/.ssh/id_ed25519
+2025-01-19 16:55:12 - paramiko.transport - DEBUG - userauth is OK
+2025-01-19 16:55:12 - paramiko.transport - INFO - Authentication (publickey) failed.
+2025-01-19 16:55:12 - paramiko.transport - DEBUG - userauth is OK
+2025-01-19 16:55:13 - paramiko.transport - INFO - Authentication (password) successful!
+2025-01-19 16:55:13 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2025-01-19 16:55:14 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2025-01-19 16:55:14 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-01-19 16:55:14 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2025-01-19 16:55:14 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2025-01-19 16:55:14 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-01-19 16:55:14 - paramiko.transport - DEBUG - [chan 0] EOF received (0)
+2025-01-19 16:55:14 - paramiko.transport - DEBUG - EOF in transport thread
+2025-01-19 16:55:14 - root - DEBUG - Capturing initial mixer state...
+2025-01-19 16:55:14 - paramiko.transport - DEBUG - starting thread (client mode): 0x940813f0
+2025-01-19 16:55:14 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.5.0
+2025-01-19 16:55:15 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_9.7p1 Debian-5
+2025-01-19 16:55:15 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.7p1)
+2025-01-19 16:55:15 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2025-01-19 16:55:15 - paramiko.transport - DEBUG - kex algos: sntrup761x25519-sha512@openssh.com, curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, ext-info-s, kex-strict-s-v00@openssh.com
+2025-01-19 16:55:15 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2025-01-19 16:55:15 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-01-19 16:55:15 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-01-19 16:55:15 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-01-19 16:55:15 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-01-19 16:55:15 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2025-01-19 16:55:15 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2025-01-19 16:55:15 - paramiko.transport - DEBUG - client lang: <none>
+2025-01-19 16:55:15 - paramiko.transport - DEBUG - server lang: <none>
+2025-01-19 16:55:15 - paramiko.transport - DEBUG - kex follows: False
+2025-01-19 16:55:15 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2025-01-19 16:55:15 - paramiko.transport - DEBUG - Strict kex mode: True
+2025-01-19 16:55:15 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2025-01-19 16:55:15 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2025-01-19 16:55:15 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2025-01-19 16:55:15 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2025-01-19 16:55:15 - paramiko.transport - DEBUG - Compression: none
+2025-01-19 16:55:15 - paramiko.transport - DEBUG - === End of kex handshake ===
+2025-01-19 16:55:15 - paramiko.transport - DEBUG - Resetting outbound seqno after NEWKEYS due to strict mode
+2025-01-19 16:55:15 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-01-19 16:55:15 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-01-19 16:55:15 - paramiko.transport - DEBUG - Resetting inbound seqno after NEWKEYS due to strict mode
+2025-01-19 16:55:15 - paramiko.transport - DEBUG - Adding ssh-ed25519 host key for [localhost]:2222: b'440556c707c76a120614a09ee00fa49e'
+2025-01-19 16:55:15 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ssh-ed25519@openssh.com,sk-ecdsa-sha2-nistp256@openssh.com,rsa-sha2-512,rsa-sha2-256', 'publickey-hostbound@openssh.com': b'0', 'ping@openssh.com': b'0'}
+2025-01-19 16:55:15 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2025-01-19 16:55:15 - paramiko.transport - DEBUG - Dropping user packet because connection is dead.
+2025-01-19 16:55:15 - paramiko.transport - DEBUG - Trying SSH agent key b'e9b3221716ad2d332f8244713a244261'
+2025-01-19 16:55:15 - paramiko.transport - DEBUG - userauth is OK
+2025-01-19 16:55:15 - paramiko.transport - INFO - Authentication (publickey) failed.
+2025-01-19 16:55:15 - paramiko.transport - DEBUG - Trying discovered key b'e9b3221716ad2d332f8244713a244261' in /home/vlab/.ssh/id_ed25519
+2025-01-19 16:55:15 - paramiko.transport - DEBUG - userauth is OK
+2025-01-19 16:55:15 - paramiko.transport - INFO - Authentication (publickey) failed.
+2025-01-19 16:55:15 - paramiko.transport - DEBUG - userauth is OK
+2025-01-19 16:55:16 - paramiko.transport - INFO - Authentication (password) successful!
+2025-01-19 16:55:16 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2025-01-19 16:55:17 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2025-01-19 16:55:17 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-01-19 16:55:17 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2025-01-19 16:55:17 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2025-01-19 16:55:17 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-01-19 16:55:17 - paramiko.transport - DEBUG - [chan 0] EOF received (0)
+2025-01-19 16:55:17 - root - DEBUG - Initial Mixer State:
+Simple mixer control 'Master',0
+  Capabilities: pvolume pswitch
+  Playback channels: Front Left - Front Right
+  Limits: Playback 0 - 74
+  Mono:
+  Front Left: Playback 54 [73%] [-20.00dB] [on]
+  Front Right: Playback 54 [73%] [-20.00dB] [on]
+2025-01-19 16:55:17 - root - DEBUG - Increasing volume by 5%...
+2025-01-19 16:55:17 - paramiko.transport - DEBUG - starting thread (client mode): 0x94081bd0
+2025-01-19 16:55:17 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.5.0
+2025-01-19 16:55:18 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_9.7p1 Debian-5
+2025-01-19 16:55:18 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.7p1)
+2025-01-19 16:55:18 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2025-01-19 16:55:18 - paramiko.transport - DEBUG - kex algos: sntrup761x25519-sha512@openssh.com, curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, ext-info-s, kex-strict-s-v00@openssh.com
+2025-01-19 16:55:18 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2025-01-19 16:55:18 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-01-19 16:55:18 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-01-19 16:55:18 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-01-19 16:55:18 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-01-19 16:55:18 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2025-01-19 16:55:18 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2025-01-19 16:55:18 - paramiko.transport - DEBUG - client lang: <none>
+2025-01-19 16:55:18 - paramiko.transport - DEBUG - server lang: <none>
+2025-01-19 16:55:18 - paramiko.transport - DEBUG - kex follows: False
+2025-01-19 16:55:18 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2025-01-19 16:55:18 - paramiko.transport - DEBUG - Strict kex mode: True
+2025-01-19 16:55:18 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2025-01-19 16:55:18 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2025-01-19 16:55:18 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2025-01-19 16:55:18 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2025-01-19 16:55:18 - paramiko.transport - DEBUG - Compression: none
+2025-01-19 16:55:18 - paramiko.transport - DEBUG - === End of kex handshake ===
+2025-01-19 16:55:18 - paramiko.transport - DEBUG - Resetting outbound seqno after NEWKEYS due to strict mode
+2025-01-19 16:55:18 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-01-19 16:55:18 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-01-19 16:55:18 - paramiko.transport - DEBUG - Resetting inbound seqno after NEWKEYS due to strict mode
+2025-01-19 16:55:18 - paramiko.transport - DEBUG - Adding ssh-ed25519 host key for [localhost]:2222: b'440556c707c76a120614a09ee00fa49e'
+2025-01-19 16:55:18 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ssh-ed25519@openssh.com,sk-ecdsa-sha2-nistp256@openssh.com,rsa-sha2-512,rsa-sha2-256', 'publickey-hostbound@openssh.com': b'0', 'ping@openssh.com': b'0'}
+2025-01-19 16:55:18 - paramiko.transport - DEBUG - Trying SSH agent key b'e9b3221716ad2d332f8244713a244261'
+2025-01-19 16:55:18 - paramiko.transport - DEBUG - userauth is OK
+2025-01-19 16:55:18 - paramiko.transport - INFO - Authentication (publickey) failed.
+2025-01-19 16:55:18 - paramiko.transport - DEBUG - Trying discovered key b'e9b3221716ad2d332f8244713a244261' in /home/vlab/.ssh/id_ed25519
+2025-01-19 16:55:18 - paramiko.transport - DEBUG - userauth is OK
+2025-01-19 16:55:18 - paramiko.transport - INFO - Authentication (publickey) failed.
+2025-01-19 16:55:18 - paramiko.transport - DEBUG - userauth is OK
+2025-01-19 16:55:19 - paramiko.transport - INFO - Authentication (password) successful!
+2025-01-19 16:55:19 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2025-01-19 16:55:19 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2025-01-19 16:55:19 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-01-19 16:55:19 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2025-01-19 16:55:19 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2025-01-19 16:55:20 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-01-19 16:55:20 - paramiko.transport - DEBUG - [chan 0] EOF received (0)
+2025-01-19 16:55:20 - root - DEBUG - Increase Volume Command Output:
+Simple mixer control 'Master',0
+  Capabilities: pvolume pswitch
+  Playback channels: Front Left - Front Right
+  Limits: Playback 0 - 74
+  Mono:
+  Front Left: Playback 58 [78%] [-16.00dB] [on]
+  Front Right: Playback 58 [78%] [-16.00dB] [on]
+2025-01-19 16:55:20 - root - DEBUG - Capturing mixer state after increasing volume by 5%...
+2025-01-19 16:55:20 - paramiko.transport - DEBUG - starting thread (client mode): 0x93ec69b0
+2025-01-19 16:55:20 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.5.0
+2025-01-19 16:55:20 - paramiko.transport - DEBUG - EOF in transport thread
+2025-01-19 16:55:21 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_9.7p1 Debian-5
+2025-01-19 16:55:21 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.7p1)
+2025-01-19 16:55:21 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2025-01-19 16:55:21 - paramiko.transport - DEBUG - kex algos: sntrup761x25519-sha512@openssh.com, curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, ext-info-s, kex-strict-s-v00@openssh.com
+2025-01-19 16:55:21 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2025-01-19 16:55:21 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-01-19 16:55:21 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-01-19 16:55:21 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-01-19 16:55:21 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-01-19 16:55:21 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2025-01-19 16:55:21 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2025-01-19 16:55:21 - paramiko.transport - DEBUG - client lang: <none>
+2025-01-19 16:55:21 - paramiko.transport - DEBUG - server lang: <none>
+2025-01-19 16:55:21 - paramiko.transport - DEBUG - kex follows: False
+2025-01-19 16:55:21 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2025-01-19 16:55:21 - paramiko.transport - DEBUG - Strict kex mode: True
+2025-01-19 16:55:21 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2025-01-19 16:55:21 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2025-01-19 16:55:21 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2025-01-19 16:55:21 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2025-01-19 16:55:21 - paramiko.transport - DEBUG - Compression: none
+2025-01-19 16:55:21 - paramiko.transport - DEBUG - === End of kex handshake ===
+2025-01-19 16:55:21 - paramiko.transport - DEBUG - Resetting outbound seqno after NEWKEYS due to strict mode
+2025-01-19 16:55:21 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-01-19 16:55:21 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-01-19 16:55:21 - paramiko.transport - DEBUG - Resetting inbound seqno after NEWKEYS due to strict mode
+2025-01-19 16:55:21 - paramiko.transport - DEBUG - Adding ssh-ed25519 host key for [localhost]:2222: b'440556c707c76a120614a09ee00fa49e'
+2025-01-19 16:55:21 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ssh-ed25519@openssh.com,sk-ecdsa-sha2-nistp256@openssh.com,rsa-sha2-512,rsa-sha2-256', 'publickey-hostbound@openssh.com': b'0', 'ping@openssh.com': b'0'}
+2025-01-19 16:55:21 - paramiko.transport - DEBUG - Trying SSH agent key b'e9b3221716ad2d332f8244713a244261'
+2025-01-19 16:55:21 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2025-01-19 16:55:21 - paramiko.transport - DEBUG - Dropping user packet because connection is dead.
+2025-01-19 16:55:21 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2025-01-19 16:55:21 - paramiko.transport - DEBUG - Dropping user packet because connection is dead.
+2025-01-19 16:55:21 - paramiko.transport - DEBUG - userauth is OK
+2025-01-19 16:55:21 - paramiko.transport - INFO - Authentication (publickey) failed.
+2025-01-19 16:55:21 - paramiko.transport - DEBUG - Trying discovered key b'e9b3221716ad2d332f8244713a244261' in /home/vlab/.ssh/id_ed25519
+2025-01-19 16:55:21 - paramiko.transport - DEBUG - userauth is OK
+2025-01-19 16:55:21 - paramiko.transport - INFO - Authentication (publickey) failed.
+2025-01-19 16:55:21 - paramiko.transport - DEBUG - userauth is OK
+2025-01-19 16:55:22 - paramiko.transport - INFO - Authentication (password) successful!
+2025-01-19 16:55:22 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2025-01-19 16:55:22 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2025-01-19 16:55:22 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-01-19 16:55:22 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2025-01-19 16:55:22 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2025-01-19 16:55:22 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-01-19 16:55:23 - paramiko.transport - DEBUG - [chan 0] EOF received (0)
+2025-01-19 16:55:23 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2025-01-19 16:55:23 - paramiko.transport - DEBUG - Dropping user packet because connection is dead.
+2025-01-19 16:55:23 - root - DEBUG - Updated Mixer State:
+Simple mixer control 'Master',0
+  Capabilities: pvolume pswitch
+  Playback channels: Front Left - Front Right
+  Limits: Playback 0 - 74
+  Mono:
+  Front Left: Playback 58 [78%] [-16.00dB] [on]
+  Front Right: Playback 58 [78%] [-16.00dB] [on]
+2025-01-19 16:55:23 - root - DEBUG - Verification of the change:
+2025-01-19 16:55:23 - root - DEBUG - Initial State:
+Simple mixer control 'Master',0
+  Capabilities: pvolume pswitch
+  Playback channels: Front Left - Front Right
+  Limits: Playback 0 - 74
+  Mono:
+  Front Left: Playback 54 [73%] [-20.00dB] [on]
+  Front Right: Playback 54 [73%] [-20.00dB] [on]
+2025-01-19 16:55:23 - root - DEBUG - Updated State:
+Simple mixer control 'Master',0
+  Capabilities: pvolume pswitch
+  Playback channels: Front Left - Front Right
+  Limits: Playback 0 - 74
+  Mono:
+  Front Left: Playback 58 [78%] [-16.00dB] [on]
+  Front Right: Playback 58 [78%] [-16.00dB] [on]
+2025-01-20 09:03:08 - paramiko.transport - DEBUG - starting thread (client mode): 0x35571d80
+2025-01-20 09:03:08 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.5.0
+2025-01-20 09:03:09 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_9.7p1 Debian-5
+2025-01-20 09:03:09 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.7p1)
+2025-01-20 09:03:09 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2025-01-20 09:03:09 - paramiko.transport - DEBUG - kex algos: sntrup761x25519-sha512@openssh.com, curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, ext-info-s, kex-strict-s-v00@openssh.com
+2025-01-20 09:03:09 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2025-01-20 09:03:09 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-01-20 09:03:09 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-01-20 09:03:09 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-01-20 09:03:09 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-01-20 09:03:09 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2025-01-20 09:03:09 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2025-01-20 09:03:09 - paramiko.transport - DEBUG - client lang: <none>
+2025-01-20 09:03:09 - paramiko.transport - DEBUG - server lang: <none>
+2025-01-20 09:03:09 - paramiko.transport - DEBUG - kex follows: False
+2025-01-20 09:03:09 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2025-01-20 09:03:09 - paramiko.transport - DEBUG - Strict kex mode: True
+2025-01-20 09:03:09 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2025-01-20 09:03:09 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2025-01-20 09:03:09 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2025-01-20 09:03:09 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2025-01-20 09:03:09 - paramiko.transport - DEBUG - Compression: none
+2025-01-20 09:03:09 - paramiko.transport - DEBUG - === End of kex handshake ===
+2025-01-20 09:03:09 - paramiko.transport - DEBUG - Resetting outbound seqno after NEWKEYS due to strict mode
+2025-01-20 09:03:09 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-01-20 09:03:09 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-01-20 09:03:09 - paramiko.transport - DEBUG - Resetting inbound seqno after NEWKEYS due to strict mode
+2025-01-20 09:03:09 - paramiko.transport - DEBUG - Adding ssh-ed25519 host key for [localhost]:2222: b'440556c707c76a120614a09ee00fa49e'
+2025-01-20 09:03:09 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ssh-ed25519@openssh.com,sk-ecdsa-sha2-nistp256@openssh.com,rsa-sha2-512,rsa-sha2-256', 'publickey-hostbound@openssh.com': b'0', 'ping@openssh.com': b'0'}
+2025-01-20 09:03:09 - paramiko.transport - DEBUG - Trying SSH agent key b'e9b3221716ad2d332f8244713a244261'
+2025-01-20 09:03:09 - paramiko.transport - DEBUG - userauth is OK
+2025-01-20 09:03:09 - paramiko.transport - INFO - Authentication (publickey) failed.
+2025-01-20 09:03:09 - paramiko.transport - DEBUG - Trying discovered key b'e9b3221716ad2d332f8244713a244261' in /home/vlab/.ssh/id_ed25519
+2025-01-20 09:03:09 - paramiko.transport - DEBUG - userauth is OK
+2025-01-20 09:03:09 - paramiko.transport - INFO - Authentication (publickey) failed.
+2025-01-20 09:03:09 - paramiko.transport - DEBUG - userauth is OK
+2025-01-20 09:03:10 - paramiko.transport - INFO - Authentication (password) successful!
+2025-01-20 09:03:10 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2025-01-20 09:03:11 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2025-01-20 09:03:11 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-01-20 09:03:11 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2025-01-20 09:03:11 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2025-01-20 09:03:11 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-01-20 09:03:11 - paramiko.transport - DEBUG - [chan 0] EOF received (0)
+2025-01-20 09:03:11 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2025-01-20 09:03:11 - root - DEBUG - Capturing initial mixer state...
+2025-01-20 09:03:11 - paramiko.transport - DEBUG - starting thread (client mode): 0x352c6b00
+2025-01-20 09:03:11 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.5.0
+2025-01-20 09:03:11 - paramiko.transport - DEBUG - EOF in transport thread
+2025-01-20 09:03:12 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_9.7p1 Debian-5
+2025-01-20 09:03:12 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.7p1)
+2025-01-20 09:03:12 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2025-01-20 09:03:12 - paramiko.transport - DEBUG - kex algos: sntrup761x25519-sha512@openssh.com, curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, ext-info-s, kex-strict-s-v00@openssh.com
+2025-01-20 09:03:12 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2025-01-20 09:03:12 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-01-20 09:03:12 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-01-20 09:03:12 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-01-20 09:03:12 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-01-20 09:03:12 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2025-01-20 09:03:12 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2025-01-20 09:03:12 - paramiko.transport - DEBUG - client lang: <none>
+2025-01-20 09:03:12 - paramiko.transport - DEBUG - server lang: <none>
+2025-01-20 09:03:12 - paramiko.transport - DEBUG - kex follows: False
+2025-01-20 09:03:12 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2025-01-20 09:03:12 - paramiko.transport - DEBUG - Strict kex mode: True
+2025-01-20 09:03:12 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2025-01-20 09:03:12 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2025-01-20 09:03:12 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2025-01-20 09:03:12 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2025-01-20 09:03:12 - paramiko.transport - DEBUG - Compression: none
+2025-01-20 09:03:12 - paramiko.transport - DEBUG - === End of kex handshake ===
+2025-01-20 09:03:12 - paramiko.transport - DEBUG - Resetting outbound seqno after NEWKEYS due to strict mode
+2025-01-20 09:03:12 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-01-20 09:03:12 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-01-20 09:03:12 - paramiko.transport - DEBUG - Resetting inbound seqno after NEWKEYS due to strict mode
+2025-01-20 09:03:12 - paramiko.transport - DEBUG - Adding ssh-ed25519 host key for [localhost]:2222: b'440556c707c76a120614a09ee00fa49e'
+2025-01-20 09:03:12 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2025-01-20 09:03:12 - paramiko.transport - DEBUG - Dropping user packet because connection is dead.
+2025-01-20 09:03:12 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ssh-ed25519@openssh.com,sk-ecdsa-sha2-nistp256@openssh.com,rsa-sha2-512,rsa-sha2-256', 'publickey-hostbound@openssh.com': b'0', 'ping@openssh.com': b'0'}
+2025-01-20 09:03:12 - paramiko.transport - DEBUG - Trying SSH agent key b'e9b3221716ad2d332f8244713a244261'
+2025-01-20 09:03:12 - paramiko.transport - DEBUG - userauth is OK
+2025-01-20 09:03:12 - paramiko.transport - INFO - Authentication (publickey) failed.
+2025-01-20 09:03:12 - paramiko.transport - DEBUG - Trying discovered key b'e9b3221716ad2d332f8244713a244261' in /home/vlab/.ssh/id_ed25519
+2025-01-20 09:03:12 - paramiko.transport - DEBUG - userauth is OK
+2025-01-20 09:03:12 - paramiko.transport - INFO - Authentication (publickey) failed.
+2025-01-20 09:03:12 - paramiko.transport - DEBUG - userauth is OK
+2025-01-20 09:03:13 - paramiko.transport - INFO - Authentication (password) successful!
+2025-01-20 09:03:13 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2025-01-20 09:03:13 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2025-01-20 09:03:13 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-01-20 09:03:13 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2025-01-20 09:03:13 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2025-01-20 09:03:13 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-01-20 09:03:14 - paramiko.transport - DEBUG - [chan 0] EOF received (0)
+2025-01-20 09:03:14 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2025-01-20 09:03:14 - paramiko.transport - DEBUG - EOF in transport thread
+2025-01-20 09:03:14 - root - DEBUG - Initial Mixer State:
+Simple mixer control 'Master',0
+  Capabilities: pvolume pswitch
+  Playback channels: Front Left - Front Right
+  Limits: Playback 0 - 74
+  Mono:
+  Front Left: Playback 54 [73%] [-20.00dB] [on]
+  Front Right: Playback 54 [73%] [-20.00dB] [on]
+2025-01-20 09:03:14 - root - DEBUG - Increasing volume by 5%...
+2025-01-20 09:03:14 - paramiko.transport - DEBUG - starting thread (client mode): 0x35571c60
+2025-01-20 09:03:14 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.5.0
+2025-01-20 09:03:15 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_9.7p1 Debian-5
+2025-01-20 09:03:15 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.7p1)
+2025-01-20 09:03:15 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2025-01-20 09:03:15 - paramiko.transport - DEBUG - kex algos: sntrup761x25519-sha512@openssh.com, curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, ext-info-s, kex-strict-s-v00@openssh.com
+2025-01-20 09:03:15 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2025-01-20 09:03:15 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-01-20 09:03:15 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-01-20 09:03:15 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-01-20 09:03:15 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-01-20 09:03:15 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2025-01-20 09:03:15 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2025-01-20 09:03:15 - paramiko.transport - DEBUG - client lang: <none>
+2025-01-20 09:03:15 - paramiko.transport - DEBUG - server lang: <none>
+2025-01-20 09:03:15 - paramiko.transport - DEBUG - kex follows: False
+2025-01-20 09:03:15 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2025-01-20 09:03:15 - paramiko.transport - DEBUG - Strict kex mode: True
+2025-01-20 09:03:15 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2025-01-20 09:03:15 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2025-01-20 09:03:15 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2025-01-20 09:03:15 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2025-01-20 09:03:15 - paramiko.transport - DEBUG - Compression: none
+2025-01-20 09:03:15 - paramiko.transport - DEBUG - === End of kex handshake ===
+2025-01-20 09:03:15 - paramiko.transport - DEBUG - Resetting outbound seqno after NEWKEYS due to strict mode
+2025-01-20 09:03:15 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-01-20 09:03:15 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-01-20 09:03:15 - paramiko.transport - DEBUG - Resetting inbound seqno after NEWKEYS due to strict mode
+2025-01-20 09:03:15 - paramiko.transport - DEBUG - Adding ssh-ed25519 host key for [localhost]:2222: b'440556c707c76a120614a09ee00fa49e'
+2025-01-20 09:03:15 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ssh-ed25519@openssh.com,sk-ecdsa-sha2-nistp256@openssh.com,rsa-sha2-512,rsa-sha2-256', 'publickey-hostbound@openssh.com': b'0', 'ping@openssh.com': b'0'}
+2025-01-20 09:03:15 - paramiko.transport - DEBUG - Trying SSH agent key b'e9b3221716ad2d332f8244713a244261'
+2025-01-20 09:03:15 - paramiko.transport - DEBUG - userauth is OK
+2025-01-20 09:03:15 - paramiko.transport - INFO - Authentication (publickey) failed.
+2025-01-20 09:03:15 - paramiko.transport - DEBUG - Trying discovered key b'e9b3221716ad2d332f8244713a244261' in /home/vlab/.ssh/id_ed25519
+2025-01-20 09:03:15 - paramiko.transport - DEBUG - userauth is OK
+2025-01-20 09:03:15 - paramiko.transport - INFO - Authentication (publickey) failed.
+2025-01-20 09:03:15 - paramiko.transport - DEBUG - userauth is OK
+2025-01-20 09:03:16 - paramiko.transport - INFO - Authentication (password) successful!
+2025-01-20 09:03:16 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2025-01-20 09:03:16 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2025-01-20 09:03:16 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-01-20 09:03:16 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2025-01-20 09:03:16 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2025-01-20 09:03:16 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-01-20 09:03:17 - paramiko.transport - DEBUG - [chan 0] EOF received (0)
+2025-01-20 09:03:17 - paramiko.transport - DEBUG - [chan 0] EOF sent (0)
+2025-01-20 09:03:17 - root - DEBUG - Increase Volume Command Output:
+Simple mixer control 'Master',0
+  Capabilities: pvolume pswitch
+  Playback channels: Front Left - Front Right
+  Limits: Playback 0 - 74
+  Mono:
+  Front Left: Playback 58 [78%] [-16.00dB] [on]
+  Front Right: Playback 58 [78%] [-16.00dB] [on]
+2025-01-20 09:03:17 - root - DEBUG - Capturing mixer state after increasing volume by 5%...
+2025-01-20 09:03:17 - paramiko.transport - DEBUG - starting thread (client mode): 0x352fd3f0
+2025-01-20 09:03:17 - paramiko.transport - DEBUG - Local version/idstring: SSH-2.0-paramiko_3.5.0
+2025-01-20 09:03:17 - paramiko.transport - DEBUG - EOF in transport thread
+2025-01-20 09:03:17 - paramiko.transport - DEBUG - Remote version/idstring: SSH-2.0-OpenSSH_9.7p1 Debian-5
+2025-01-20 09:03:17 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_9.7p1)
+2025-01-20 09:03:17 - paramiko.transport - DEBUG - === Key exchange possibilities ===
+2025-01-20 09:03:17 - paramiko.transport - DEBUG - kex algos: sntrup761x25519-sha512@openssh.com, curve25519-sha256, curve25519-sha256@libssh.org, ecdh-sha2-nistp256, ecdh-sha2-nistp384, ecdh-sha2-nistp521, diffie-hellman-group-exchange-sha256, diffie-hellman-group16-sha512, diffie-hellman-group18-sha512, diffie-hellman-group14-sha256, ext-info-s, kex-strict-s-v00@openssh.com
+2025-01-20 09:03:17 - paramiko.transport - DEBUG - server key: rsa-sha2-512, rsa-sha2-256, ecdsa-sha2-nistp256, ssh-ed25519
+2025-01-20 09:03:17 - paramiko.transport - DEBUG - client encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-01-20 09:03:17 - paramiko.transport - DEBUG - server encrypt: chacha20-poly1305@openssh.com, aes128-ctr, aes192-ctr, aes256-ctr, aes128-gcm@openssh.com, aes256-gcm@openssh.com
+2025-01-20 09:03:17 - paramiko.transport - DEBUG - client mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-01-20 09:03:17 - paramiko.transport - DEBUG - server mac: umac-64-etm@openssh.com, umac-128-etm@openssh.com, hmac-sha2-256-etm@openssh.com, hmac-sha2-512-etm@openssh.com, hmac-sha1-etm@openssh.com, umac-64@openssh.com, umac-128@openssh.com, hmac-sha2-256, hmac-sha2-512, hmac-sha1
+2025-01-20 09:03:17 - paramiko.transport - DEBUG - client compress: none, zlib@openssh.com
+2025-01-20 09:03:17 - paramiko.transport - DEBUG - server compress: none, zlib@openssh.com
+2025-01-20 09:03:17 - paramiko.transport - DEBUG - client lang: <none>
+2025-01-20 09:03:17 - paramiko.transport - DEBUG - server lang: <none>
+2025-01-20 09:03:17 - paramiko.transport - DEBUG - kex follows: False
+2025-01-20 09:03:17 - paramiko.transport - DEBUG - === Key exchange agreements ===
+2025-01-20 09:03:17 - paramiko.transport - DEBUG - Strict kex mode: True
+2025-01-20 09:03:17 - paramiko.transport - DEBUG - Kex: curve25519-sha256@libssh.org
+2025-01-20 09:03:17 - paramiko.transport - DEBUG - HostKey: ssh-ed25519
+2025-01-20 09:03:17 - paramiko.transport - DEBUG - Cipher: aes128-ctr
+2025-01-20 09:03:17 - paramiko.transport - DEBUG - MAC: hmac-sha2-256
+2025-01-20 09:03:17 - paramiko.transport - DEBUG - Compression: none
+2025-01-20 09:03:17 - paramiko.transport - DEBUG - === End of kex handshake ===
+2025-01-20 09:03:17 - paramiko.transport - DEBUG - Resetting outbound seqno after NEWKEYS due to strict mode
+2025-01-20 09:03:17 - paramiko.transport - DEBUG - kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2025-01-20 09:03:17 - paramiko.transport - DEBUG - Switch to new keys ...
+2025-01-20 09:03:17 - paramiko.transport - DEBUG - Resetting inbound seqno after NEWKEYS due to strict mode
+2025-01-20 09:03:17 - paramiko.transport - DEBUG - Adding ssh-ed25519 host key for [localhost]:2222: b'440556c707c76a120614a09ee00fa49e'
+2025-01-20 09:03:17 - paramiko.transport - DEBUG - Got EXT_INFO: {'server-sig-algs': b'ssh-ed25519,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ssh-ed25519@openssh.com,sk-ecdsa-sha2-nistp256@openssh.com,rsa-sha2-512,rsa-sha2-256', 'publickey-hostbound@openssh.com': b'0', 'ping@openssh.com': b'0'}
+2025-01-20 09:03:17 - paramiko.transport - DEBUG - Trying SSH agent key b'e9b3221716ad2d332f8244713a244261'
+2025-01-20 09:03:17 - paramiko.transport - DEBUG - userauth is OK
+2025-01-20 09:03:18 - paramiko.transport - INFO - Authentication (publickey) failed.
+2025-01-20 09:03:18 - paramiko.transport - DEBUG - Trying discovered key b'e9b3221716ad2d332f8244713a244261' in /home/vlab/.ssh/id_ed25519
+2025-01-20 09:03:18 - paramiko.transport - DEBUG - userauth is OK
+2025-01-20 09:03:18 - paramiko.transport - INFO - Authentication (publickey) failed.
+2025-01-20 09:03:18 - paramiko.transport - DEBUG - userauth is OK
+2025-01-20 09:03:18 - paramiko.transport - INFO - Authentication (password) successful!
+2025-01-20 09:03:18 - paramiko.transport - DEBUG - [chan 0] Max packet in: 32768 bytes
+2025-01-20 09:03:19 - paramiko.transport - DEBUG - Received global request "hostkeys-00@openssh.com"
+2025-01-20 09:03:19 - paramiko.transport - DEBUG - Rejecting "hostkeys-00@openssh.com" global request from server.
+2025-01-20 09:03:19 - paramiko.transport - DEBUG - [chan 0] Max packet out: 32768 bytes
+2025-01-20 09:03:19 - paramiko.transport - DEBUG - Secsh channel 0 opened.
+2025-01-20 09:03:19 - paramiko.transport - DEBUG - [chan 0] Sesch channel 0 request ok
+2025-01-20 09:03:19 - paramiko.transport - DEBUG - [chan 0] EOF received (0)
+2025-01-20 09:03:19 - paramiko.transport - DEBUG - EOF in transport thread
+2025-01-20 09:03:19 - root - DEBUG - Updated Mixer State:
+Simple mixer control 'Master',0
+  Capabilities: pvolume pswitch
+  Playback channels: Front Left - Front Right
+  Limits: Playback 0 - 74
+  Mono:
+  Front Left: Playback 58 [78%] [-16.00dB] [on]
+  Front Right: Playback 58 [78%] [-16.00dB] [on]
+2025-01-20 09:03:19 - root - DEBUG - Verification of the change:
+2025-01-20 09:03:19 - root - DEBUG - Initial State:
+Simple mixer control 'Master',0
+  Capabilities: pvolume pswitch
+  Playback channels: Front Left - Front Right
+  Limits: Playback 0 - 74
+  Mono:
+  Front Left: Playback 54 [73%] [-20.00dB] [on]
+  Front Right: Playback 54 [73%] [-20.00dB] [on]
+2025-01-20 09:03:19 - root - DEBUG - Updated State:
+Simple mixer control 'Master',0
+  Capabilities: pvolume pswitch
+  Playback channels: Front Left - Front Right
+  Limits: Playback 0 - 74
+  Mono:
+  Front Left: Playback 58 [78%] [-16.00dB] [on]
+  Front Right: Playback 58 [78%] [-16.00dB] [on]
